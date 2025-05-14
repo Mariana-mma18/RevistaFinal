@@ -1,0 +1,326 @@
+/* ------------------------------------- */
+/* Reinicio de los estilos para borrar modificaciones del navegador */
+/* ------------------------------------- */
+
+*{
+    margin: 5;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 100%;
+    
+}
+#home{
+    background-color: #000000;
+}
+
+
+/* ------------------------------------- */
+/* Estilos para el HOME */
+/* ------------------------------------- */
+
+
+/*IMAGEN DE FONDO ENCABEZADO**/
+
+.encabezado {
+    position: relative;
+    text-align: center;
+    padding: 60px 20px;
+    color: rgb(0, 0, 0);
+    overflow: hidden;
+}
+
+.encabezado::before {
+    content: "";
+    background-image: url("multitud.jpg");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.6; /* opacidad de la imagen */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+}
+
+.encabezado h1,
+.encabezado h2 {
+    position: relative;
+    z-index: 1;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+
+
+h1{
+    font-family:Georgia, 'Times New Roman', Times, serif, Helvetica, sans-serif;
+    font-size: 48pt;
+    text-align: center;
+    color: rgb(11, 44, 255);
+    
+}
+
+h2{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, Helvetica, sans-serif;
+    font-size: 24pt;
+    text-align: center;
+    color: rgb(255, 230, 0);
+}
+
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estilo general del nav */
+nav {
+    text-align: end;
+    margin-top: 40px;
+  }
+  
+  /* BOTONES */
+
+
+
+  nav a {
+    display: flex;
+    margin: 15px;
+    padding: 12px 20px;
+    text-decoration:hsl(from color h s l);
+    color: #e6e201;
+    border: 3px solid rgb(94, 62, 209);
+    border-radius: 999px;
+    font-size: 20px;
+    font-weight: bold;
+    transition:background-color 0.3s, color 0.3s;
+  }
+  
+  /* Efecto hover: cambia colores al pasar el cursor */
+  nav a:hover {
+    background-color: #ffc0ef;
+    color: #ad0453;
+  }
+  
+
+/* ------------------------------------- */
+/* Estilos para las secciones */
+/* ------------------------------------- */
+
+main{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+}
+
+header{
+    
+    padding: 3%;
+}
+
+nav{
+    background-color: rgba(255, 255, 255, 0);
+    padding: 20px;
+
+}
+
+section{
+    font-family: Arial, Helvetica, sans-serif;
+    height: 600px; /* Esta propiedad se puede cambiar según el alto del contenido */ 
+    padding: 5%;
+}
+
+.contenedor-parrafo-icono {
+  text-align: center;
+  margin: 200px;
+  color: aliceblue;
+}
+
+.parrafo-icono {
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: white; /* Añade esta línea */
+}
+
+
+
+/** ESTE ES EL COLOR DE EL BOTON DESCARGAR PDF */
+
+section a{
+    color: #ff169e;
+}
+
+/** EL FOOTER ES LO QUE DICE CREADO POR.... 2025*/
+
+footer{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(255, 255, 255);
+    padding: 1%;
+    text-align: center;
+}
+ /**COLORES DE LOS SUBTITULOS DE CADA SECCIÓN*/
+
+ #sec1 h1{
+    color:#c4ff4d;
+    font-size: 45px;
+
+ }
+#sec1 h2{
+    color: #00ff9d;
+}
+
+#sec1 {
+background-color: #000000;
+}
+
+
+
+#sec2 h1{
+    color:#f200ff;
+}
+
+#sec2 {
+background-color: #000000;
+}
+#sec2 h2{
+    color: #ffffff;
+  
+}
+
+
+#sec3 h2{
+    color:#51ff00 
+}
+
+#sec3 {
+background-color: #000000;
+}
+
+#sec3 h3{
+    color: rgb(255, 255, 255);
+}
+
+h3 {
+  color: rgb(255, 255, 255); /* Reemplaza 'lime' con el color que prefieras */
+}
+
+
+/**BOTONES*/
+.botoniconoyoutube {
+    display: inline-block;
+    padding: 8px 16px;
+    margin: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 6px;
+    border: 2px solid;
+    transition: background-color 0.3s, color 0.3s;
+    align-items: center;   
+  }
+  
+  /* Botón YouTube apariencia */
+
+.youtube-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 6px 8px;
+  border: 2px solid red;
+  background-color: red;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  transition: background-color 0.3s, color 0.3s;
+  width: auto;
+  max-width: 15%;
+ 
+  
+}
+
+
+
+.youtube-button:hover {
+  background-color: white;
+  color: red;
+}
+
+.youtube-button svg {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+.titulo-columna {
+  max-width: 1000px;       /* Limita el ancho */
+  margin: 0 auto;         /* esto lo centra horizontalmente */
+  padding: 20px;        /* Márgenes internos a los lados */
+  font-family: sans-serif;
+  font-size: 18px;
+  text-align: center;
+  color: aliceblue;
+}
+
+.imagen-con-texto {
+color: rgb(193, 189, 192);
+}
+
+
+
+
+.contenedor-inferior-centro {
+  position: absolute;
+  bottom: 50px; /* Aumentamos el espacio desde la parte inferior para separarlo del texto */
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 30px; /* Aumentamos el espacio entre los botones si los tienes uno al lado del otro */
+  /* Si los botones están uno debajo del otro (alineación vertical), usa margin-bottom en cada botón */
+  flex-direction: row; /* Asegúrate de que los botones estén en fila si quieres espacio horizontal entre ellos */
+  align-items: center; /* Alinea verticalmente los botones dentro del contenedor (opcional) */
+}
+
+.boton-estilizado {
+  background-color: black;
+  color: yellow;
+  border: 3px solid purple; /* Borde un poco más grueso para que se note más en botones grandes */
+  border-radius: 25px; /* Un poco más de redondeo si los botones son más grandes */
+  padding: 15px 30px; /* Aumentamos el padding para hacer el botón más grande */
+  cursor: pointer;
+  font-size: 18px; /* Aumentamos el tamaño de la fuente para que se vea mejor en botones grandes */
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.boton-estilizado:hover {
+  background-color: pink;
+  border-color: purple;
+}
+
+/* Si los botones están uno debajo del otro (alineación vertical): *//
+
+.contenedor-inferior-centro {
+  display: flex;
+  flex-direction: column; /* O "row" si los quieres alineados horizontalmente */
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 80px; /* Esto sí separará los botones del contenido anterior */
+}
+
+.boton-estilizado {
+  background-color: black;
+  color: yellow;
+  border: 3px solid purple;
+  border-radius: 25px;
+  padding: 20px 40px; /* Aumentamos el padding para botones más grandes */
+  margin-bottom: 1px; /* Espacio entre cada botón verticalmente */
+  cursor: pointer;
+  font-size: 20px;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+  width: auto; /* Ajusta el ancho al contenido */
+  
+}
